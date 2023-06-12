@@ -1,8 +1,14 @@
-let i = 0;
-let j = 0;
-function fizzBuzz(i,j){
-    if(i % 3 === 0 )
-    return (fizz);
-    if(i % 3 !== 0)
-    console.log('7');
-    }
+const output = FizzBuzz(false);
+console.log(output);
+function FizzBuzz(input ){
+    if(typeof input !=='number')
+    return 'Not A Number';
+    if(input % 3 === 0 && input % 5 === 0 )
+    return 'FizzBuzz'
+    if(input % 3 === 0)
+    return 'Fizz';
+    if(input % 5 === 0)
+    return 'Buzz';
+
+    return input;
+}
