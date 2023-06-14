@@ -5,9 +5,11 @@ function ArrayRange(min,max){
     const output =[];
     for(let i=min; i<=max; i++)
     output.push(i);
+    for (let i = max; i>= min; i--)
+    output.push(i);
     return output;
 }
-const maxnumbers = MAXArrayRange(10,1);
+const maxnumbers = MAXArrayRange(1,10);
 console.log(maxnumbers);
 // Max to Min;
 function MAXArrayRange(max,min){
